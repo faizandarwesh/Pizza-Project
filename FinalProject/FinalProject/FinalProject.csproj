@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A8004DB-17AB-43F0-8898-91799B773E04}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FinalProject</RootNamespace>
+    <AssemblyName>FinalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About us.Designer.cs">
+      <DependentUpon>About us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BbqPizza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BbqPizza.Designer.cs">
+      <DependentUpon>BbqPizza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beverages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beverages.Designer.cs">
+      <DependentUpon>Beverages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billing.Designer.cs">
+      <DependentUpon>Billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deals.Designer.cs">
+      <DependentUpon>Deals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinkOrders.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pizzas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pizzas.Designer.cs">
+      <DependentUpon>Pizzas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About us.resx">
+      <DependentUpon>About us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BbqPizza.resx">
+      <DependentUpon>BbqPizza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beverages.resx">
+      <DependentUpon>Beverages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing.resx">
+      <DependentUpon>Billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deals.resx">
+      <DependentUpon>Deals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pizzas.resx">
+      <DependentUpon>Pizzas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illuminati_pizza_pyramid.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1ctz3c.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\website-templates-background-images-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perf.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbq.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beef.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arabian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fajita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piperoni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pepperoni-pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salad-seafood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salad-xs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepsi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aqua.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aqua1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cofee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shakes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinner_deals.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pairDealsProimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pairDealsProimage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\midnight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy_hour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-1920-412086.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-1920-369063.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-1920-328730.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
